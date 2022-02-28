@@ -170,6 +170,7 @@ header .music-stop-logo {
 .secondary-section--cards {
       margin-top: 15px;
       height: auto;
+      
 }
 
 .secondary-section--card {
@@ -181,11 +182,20 @@ header .music-stop-logo {
       justify-content: center;
       min-width: 320px;
       max-width: 400px;
-      margin-top: 30px;
+      /* height: 350px; */
       margin: 30px auto;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);  
+      cursor: pointer;
+      border-radius: 30px;
+}
+
+.secondary-section--card:hover{
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-2%);
 }
 
 .secondary-section--card img {
+      margin-top: 30px;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -193,7 +203,7 @@ header .music-stop-logo {
       max-width: 300px;
       height: 200px;
       border-radius: 30px;
-      box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -211,6 +221,7 @@ header .music-stop-logo {
       color: var(--basic-black);
       background-color: #F0C244;
       padding: 10px 15px;
+      margin-bottom: 30px;
 
 }
 
@@ -433,6 +444,15 @@ footer p {
       margin-top: 30px;
 }
 
+.news h2{
+      
+margin-top: 30px;
+text-align: center;
+font-weight: 700;
+font-size: 3.0rem;
+border-bottom: 2px solid var(--just-white);
+}
+
 .news-cards--container {
       gap: 30px 0;
       display: flex;
@@ -446,16 +466,26 @@ footer p {
 .news-card--container {
       margin: 0 auto;
       margin-top: 40px;
-      margin: 0 auto;
       display: flex;
       flex-direction: column;
       width: 320px;
+      border-radius: 30px;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2); 
+      height: 400px;
+      cursor: pointer;
 }
 
+.news-card--container:hover{
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-2%);
+}
+
+
 .card-img--container {
-      margin: 0 auto;
+      margin: 30px auto;
       width: 300px;
       height: 200px;
+     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0); 
 }
 
 .card-img--container img {
@@ -500,9 +530,11 @@ footer p {
 }
 
 .our-stores h2{
-      text-align: center;
-      margin-top: 30px;
-      font-size: 2.0rem;
+margin-top: 30px;
+text-align: center;
+font-weight: 700;
+font-size: 3.0rem;
+/* border-bottom: 2px solid var(--just-white); */
 }
 
 
@@ -545,9 +577,30 @@ footer p {
 }
 
 .card-our-store--direction {
+      /* position: relative; */
       margin: 0 auto;
       width: 90%;
       margin-top: 20px;
+}
+
+.card-our-store--direction span, .card-our-store--phone span{
+
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      vertical-align: -3px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+} 
+
+.card-our-store--direction span{
+      background-image: url(../aseets/icons/map-pin-black.svg);
+}
+
+.card-our-store--phone span{
+      background-image: url(../aseets/icons/phone-black.svg);
 }
 
 .card-our-store--phone {
@@ -571,10 +624,11 @@ footer p {
 }
 
 .our-store--main-title{
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      margin-top: 30px;
+margin-top: 30px;
+text-align: center;
+font-weight: 700;
+font-size: 3.0rem;
+border-bottom: 2px solid var(--just-white);
 }
 
 .our-store--carrousel{
@@ -596,10 +650,18 @@ footer p {
       min-width: 300px;
       width: 20%;
       height: 30%;
+      cursor: pointer;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 30px;
+}
+
+.our-store-card:hover{
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translateY(-2%);
 }
 
 .our-store--card-img-container{
-      margin: 10px auto;
+      margin: 30px auto;
       width: 90%;
       height: 60%;
 }
@@ -608,6 +670,11 @@ footer p {
       width: 100%;
       height: 100%;
       object-fit: cover;
+}
+
+.our-store--card-img-container img:hover{
+     -webkit-transform: rotate(360deg);
+     transition: 2s ease-in-out;
 }
 
 .our-store-info--container{
@@ -620,7 +687,14 @@ footer p {
       font-size: 1.6rem;
       font-weight: 300;
       margin-bottom: 10px;
+}
 
+.our-store--title{
+      font-weight: bold;
+}
+.our-store--price{
+      margin-bottom: 20px;
+      font-weight: 500;
 }
 
 
