@@ -1,0 +1,775 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+
+
+html {
+      font-size: 62.5%;
+      font-family: 'poppins';
+}
+
+:root {
+      --background-color: #E8DFCB;
+      --basic-black: #232524;
+      --complement-one: #4E0721;
+      --complement-two: #E14E2B;
+      --complement-three: #EB7C32;
+      --complement-four: #F0C244;
+      --off-white: #faf8f7;
+      --just-white: #fff;
+}
+
+body {
+      background-color: var(--background-color);
+}
+
+a {
+      text-decoration: none;
+}
+
+li {
+      list-style: none;
+
+}
+
+header {
+      width: 100%;
+      height: 50px;
+      padding: 0 10px;
+      background-color: var(--basic-black);
+      min-width: 320px;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+            "logo . . icons";
+      align-items: center;
+}
+
+header .music-stop-logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: var(--just-white);
+      grid-area: logo;
+}
+
+.header-nav-sections {
+      display: none;
+}
+
+.header-icons {
+      display: flex;
+      grid-area: icons;
+      justify-content: flex-end;
+}
+
+.header-icons .hi {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+}
+
+.header-icons .header-search {
+      background-image: url('../aseets/icons/search.svg');
+}
+
+.header-icons .header-shop {
+      background-image: url('../aseets/icons/shopping-bag.svg');
+}
+
+.header-icons .header-burger {
+      background-image: url('/aseets/icons/align-justify.svg');
+}
+
+.home-main {
+      width: 100%;
+      height: auto;
+}
+
+.home-primary--section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: auto;
+}
+
+.home-primary--section img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+      margin: 10px 0;
+}
+
+.home-primary--section h1 {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-top: 10px;
+}
+
+.home-primary--section span {
+      color: var(--complement-two)
+}
+
+
+.colors {
+      margin-top: 30px;
+      width: 100%;
+      height: auto
+}
+
+.colors .c1 {
+      background-color: var(--complement-one);
+      height: 5vh;
+      width: 100%;
+}
+
+.colors .c2 {
+      background-color: var(--complement-two);
+      height: 5vh;
+      width: 100%;
+}
+
+.colors .c3 {
+      background-color: var(--complement-three);
+      height: 5vh;
+      width: 100%;
+}
+
+.colors .c4 {
+      background-color: var(--complement-four);
+      height: 5vh;
+      width: 100%;
+}
+
+.home-cards-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+}
+
+.secondary-section--title {
+      margin-top: 15px;
+      padding: 15px 0 30px 0;
+      font-size: 1.6rem;
+      text-align: center;
+      color: var(--complement-two);
+      border-bottom: 1px solid var(--off-white);
+
+}
+
+.secondary-section--cards {
+      margin-top: 15px;
+      height: auto;
+}
+
+.secondary-section--card {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      min-width: 320px;
+      max-width: 400px;
+      margin-top: 30px;
+      margin: 30px auto;
+}
+
+.secondary-section--card img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+      max-width: 300px;
+      height: 200px;
+      border-radius: 30px;
+      box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+
+}
+
+.secondary-section--card p {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 500;
+}
+
+.secondary-section--card .card-button {
+      justify-content: center;
+      font-size: 1.2rem;
+      border-radius: 30px;
+      font-weight: 300;
+      color: var(--basic-black);
+      background-color: #F0C244;
+      padding: 10px 15px;
+
+}
+
+.home--third-section {
+      background-image: linear-gradient(0deg,
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)), url(../aseets/img/home-third-section.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      min-width: 320px;
+      width: 100%;
+      height: 300px;
+}
+
+
+
+.home--third-section h3 {
+      font-size: 1.6rem;
+      color: var(--just-white);
+}
+
+.home--third-section input {
+      margin-top: 15px;
+      width: 150px;
+      height: 30px;
+      align-self: center;
+      border: none;
+      border-radius: 30px;
+      border: 1px solid var(--background-color);
+      justify-items: center;
+
+}
+
+footer {
+      width: 100%;
+      min-width: 320px;
+      min-height: 320px;
+      background-color: var(--basic-black);
+      padding: 0 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+}
+
+footer .content-container {
+      text-align: center;
+}
+
+footer h3 {
+      margin-top: 20px;
+      font-size: 1.8rem;
+      color: var(--just-white);
+}
+
+footer p {
+      color: var(--just-white);
+      font-size: 1.6rem;
+      margin: 10px 0;
+}
+
+
+
+
+
+
+/* ABOUT US */
+.about-us {
+      display: grid;
+      grid-auto-columns: 1fr;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(7, auto);
+      row-gap: 30px;
+      grid-template-areas:
+            "about-us--title"
+            "who-we-are"
+            "colors"
+            "people"
+            "about-us-hero"
+            "music"
+            "footer";
+}
+
+.about-us--title {
+      grid-area: about-us--title;
+}
+
+.colors {
+      grid-area: colors;
+}
+
+.who-we-are {
+      grid-area: who-we-are;
+}
+
+.people {
+      grid-area: people;
+}
+
+.about-us-hero {
+      grid-area: about-us-hero;
+}
+
+.music {
+      grid-area: music;
+}
+
+.footer {
+      grid-area: footer;
+}
+
+
+.about-us--title {
+      margin-top: 30px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 3.0rem;
+      border-bottom: 2px solid var(--just-white);
+}
+
+.about-us .who-we-are,
+.people,
+.music {
+      min-width: 320px;
+      height: auto;
+
+}
+
+.who-we-are--img-container,
+.people--img-container,
+.music--img-container {
+      margin: 0 auto;
+      width: 90%;
+      height: auto;
+}
+
+.who-we-are--img-container img,
+.people--img-container img,
+.music--img-container img {
+      justify-content: center;
+      align-self: center;
+      width: 100%;
+      height: 100%;
+      border-radius: 30px;
+
+}
+
+.who-we-are--content,
+.people--content,
+.music--content {
+      display: flex;
+      flex-direction: column;
+
+}
+
+.who-we-are--content h2,
+.people--content h2,
+.music--content h2 {
+      margin-top: 30px;
+      min-width: 250px;
+      max-width: 500px;
+      text-align: center;
+      align-self: center;
+      padding: 20px;
+      border: solid 1px var(--basic-black);
+      border-radius: 30px;
+      color: var(--off-white);
+      background-color: var(--basic-black);
+}
+
+.who-we-are--content p,
+.people--content p,
+.music--content p {
+      margin-top: 30px;
+      align-self: center;
+      justify-self: center;
+      width: 80%;
+      max-width: 600px;
+      font-weight: 300;
+      line-height: 2.5rem;
+      font-size: 1.6rem;
+}
+
+.about-us-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-image: linear-gradient(0deg,
+                  rgba(0, 0, 0, 0.5),
+                  rgba(0, 0, 0, 0.5)), url('../aseets/img/about-us-hero.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 40vh
+}
+
+
+
+.about-us-hero p {
+      vertical-align: center;
+      font-weight: bold;
+      font-size: 2.0rem;
+      color: var(--just-white);
+}
+
+
+/* NEWS */
+
+
+.news {
+      margin-top: 30px;
+}
+
+.news-cards--container {
+      gap: 30px 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 0 auto;
+      max-width: 1450px;
+}
+
+.news-card--container {
+      margin: 0 auto;
+      margin-top: 40px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      width: 320px;
+}
+
+.card-img--container {
+      margin: 0 auto;
+      width: 300px;
+      height: 200px;
+}
+
+.card-img--container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+}
+
+.news-card--container p {
+      margin-top: 20px;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      width: 300px;
+      text-align: center;
+}
+
+.news--pages {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+}
+
+.news--pages ul {
+      display: flex;
+      gap: 10px;
+}
+
+.news--pages ul li a {
+      color: black;
+      cursor: pointer;
+      font-size: 1.6rem;
+}
+
+
+/* Our Stores */
+
+.our-stores {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr;
+}
+
+.our-stores h2{
+      text-align: center;
+      margin-top: 30px;
+      font-size: 2.0rem;
+}
+
+
+.our-store--card {
+      border-top: 2px solid rgb(175, 172, 172);
+      padding-top: 20px;
+      margin: 30px auto;
+      min-width: 300px;
+      max-width: 1000px;
+}
+
+.our-store--img-container {
+      margin: 0 auto;
+      width: 90%;
+      min-height: 300px;
+      height: 400px;
+}
+
+.our-store--img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+}
+
+.our-store-info--container {
+      margin: 20px 0;
+      line-height: 1.8rem;
+      font-weight: 300;
+      font-size: 1.6rem;
+
+}
+
+.card-our-store--info {
+      margin: 0 auto;
+      width: 90%;
+      min-width: 300px;
+      max-width: 700px;
+      line-height: 2.0rem
+}
+
+.card-our-store--direction {
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 20px;
+}
+
+.card-our-store--phone {
+      margin: 0 auto;
+      width: 90%;
+      margin-top: 20px;
+}
+
+/* SHOP */
+
+
+
+/* cards */
+
+.our-store-grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-auto-rows: auto;
+      min-width: 320px;
+
+}
+
+.our-store--main-title{
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      margin-top: 30px;
+}
+
+.our-store--carrousel{
+
+}
+
+.our-store--cards{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+     min-width: 320px;
+     max-width: 1300px;
+     margin: 0 auto;
+
+}
+
+.our-store-card{
+      margin: 30px auto;
+      min-width: 300px;
+      width: 20%;
+      height: 30%;
+}
+
+.our-store--card-img-container{
+      margin: 10px auto;
+      width: 90%;
+      height: 60%;
+}
+
+.our-store--card-img-container img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
+.our-store-info--container{
+      height: auto;
+}
+
+.our-store--title, .our-store--concept, .our-store--price{
+      width: 90%;
+      margin: 0 auto;
+      font-size: 1.6rem;
+      font-weight: 300;
+      margin-bottom: 10px;
+
+}
+
+
+
+@media(min-width:700px) {
+
+      .header-nav-sections {
+            display: contents;
+            grid-area: section;
+            display: flex;
+            justify-content: space-around;
+      }
+
+      .header-nav-sections a {
+            color: var(--just-white);
+            margin: 0 10px;
+            font-size: 1.2rem;
+            
+      }
+
+      header {
+            grid-template-areas:
+                  "logo section section icons";
+      }
+
+      .secondary-section--cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 850px;
+            margin: 0 auto;
+      }
+
+      footer {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                  " logo contenido";
+      }
+
+      footer h3 {
+            grid-area: logo;
+      }
+
+      footer .footer--info {
+            grid-area: contenido;
+      }
+
+      .who-we-are,
+      .people,
+      .music {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+      }
+
+      .who-we-are--content,
+      .people--content,
+      .music--content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+      }
+
+
+      .people--content {
+            order: 1;
+      }
+
+      .people--img-container {
+            order: 2;
+      }
+
+      /* our-store */
+
+      .our-store--card{
+            display: grid;
+            grid-auto-columns: 1fr;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 15px;
+      }
+
+      .our-store-info--container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+      }
+}
+
+
+@media(min-width: 1024px) {
+
+      header {
+            height: 70px;
+      }
+
+      header .music-stop-logo {
+            font-size: 2.0rem;
+      }
+
+      .header-nav-sections a {
+            font-size: 2.0rem;
+      }
+
+      .home-primary--section img {
+            display: none;
+      }
+
+      header .header-icons .hi {
+            width: 30px;
+            height: 30px;
+      }
+
+      .home-primary--section {
+            background-image: url('../aseets/img/vinilo-1200-.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 500px;
+
+      }
+
+      .home-primary--section h1 {
+            font-size: 4.0rem;
+            color: white;
+      }
+
+      .colors {
+            margin: 0;
+      }
+
+      .about-us {
+            margin: 0 auto;
+      }
+
+      .who-we-are--content,
+      .people--content,
+      .music--content {
+            font-size: 2.5rem;
+      }
+
+      .who-we-are--content p,
+      .people--content p,
+      .music--content p {
+            font-size: 2.0rem;
+      }
+
+      
+
+}
