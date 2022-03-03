@@ -23,6 +23,7 @@ html {
 }
 
 body {
+      
       background-color: var(--background-color);
 }
 
@@ -34,6 +35,12 @@ li {
       list-style: none;
 
 }
+
+/* Boostrap header */
+#header{
+      font-size: 2.0rem;
+}
+/* Boostrap header */
 
 header {
       width: 100%;
@@ -47,6 +54,8 @@ header {
             "logo . . icons";
       align-items: center;
 }
+
+
 
 header .music-stop-logo {
       font-size: 1.6rem;
@@ -260,8 +269,22 @@ header .music-stop-logo {
       justify-items: center;
 
 }
+/* Boostrap Footer */
 
-footer {
+#footer a {
+      color: white;
+    }
+
+   #footer{
+         background: var(--basic-black);
+         font-size: 1.6rem;
+   } 
+
+/* Boostrap Footer */
+
+
+
+/* footer {
       width: 100%;
       min-width: 320px;
       min-height: 320px;
@@ -272,8 +295,8 @@ footer {
       justify-content: center;
       align-items: center;
 
-}
-
+} */
+/* 
 footer .content-container {
       text-align: center;
 }
@@ -289,7 +312,7 @@ footer p {
       font-size: 1.6rem;
       margin: 10px 0;
 }
-
+ */
 
 
 
@@ -336,9 +359,9 @@ footer p {
       grid-area: music;
 }
 
-.footer {
+/* .footer {
       grid-area: footer;
-}
+} */
 
 
 .about-us--title {
@@ -631,9 +654,9 @@ font-size: 3.0rem;
 border-bottom: 2px solid var(--just-white);
 }
 
-.our-store--carrousel{
+/* .our-store--carrousel{
 
-}
+} */
 
 .our-store--cards{
       display: flex;
@@ -729,21 +752,21 @@ border-bottom: 2px solid var(--just-white);
             margin: 0 auto;
       }
 
-      footer {
+      /* footer {
             text-align: center;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-areas:
-                  " logo contenido";
+                  " logo contenido"; */
       }
 
-      footer h3 {
+      /* footer h3 {
             grid-area: logo;
       }
 
       footer .footer--info {
             grid-area: contenido;
-      }
+      } */
 
       .who-we-are,
       .people,
