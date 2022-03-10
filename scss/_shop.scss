@@ -1,0 +1,82 @@
+/* SHOP */
+
+
+.shop-main {
+
+      .our-store--main-title {
+            margin-top: 30px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 3.0rem;
+            border-bottom: 2px solid var(--just-white);
+      }
+
+      .our-store--cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            min-width: 320px;
+            max-width: 1300px;
+            margin: 0 auto;
+
+            .our-store-card {
+                  margin: 30px auto;
+                  min-width: 300px;
+                  width: 20%;
+                  height: 30%;
+                  cursor: pointer;
+                  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+                  border-radius: 30px;
+
+                  .our-store--card-img-container {
+                        margin: 30px auto;
+                        width: 90%;
+                        height: 60%;
+
+                        img {
+                              width: 100%;
+                              height: 100%;
+                              object-fit: cover;
+                        }
+
+                        img:hover {
+                              -webkit-transform: rotate(360deg);
+                              transition: 2s ease-in-out;
+                        }
+                  }
+
+
+                  .our-store--info-container {
+                        height: auto;
+
+                        p{
+                              width: 90%;
+                              margin: 0 auto;
+                              font-size: 1.6rem;
+                              font-weight: 300;
+                              margin-bottom: 10px;
+                        }
+                        .our-store--title {
+                              font-weight: bold;
+                        }
+                        .our-store--price {
+                              margin-bottom: 20px;
+                              font-weight: 500;
+                        }
+
+
+                       
+                  }
+
+            }
+
+            .our-store-card:hover {
+                  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+                  transform: translateY(-2%);
+            }
+      }
+
+}
+
+
+/* SHOP */

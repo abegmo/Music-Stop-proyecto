@@ -1,0 +1,195 @@
+@import "boostrap";
+@import "general";
+@import "home";
+@import "about-us";
+@import "news";
+@import "our-stores";
+@import "shop";
+
+
+
+// MediaQueries
+
+
+
+@media(min-width:700px) {
+
+      .about-us {
+            .about-us--title {
+                  font-size: 2.5rem;
+            }
+
+            .who-we-are {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 0;
+                  border-top: 2px solid var(--just-white);
+                  padding-top: 10px;
+                  max-width: 90%;
+                  margin: 0 auto;
+
+                  .who-we-are--img-container {
+                        border-top: none;
+                  }
+
+                  .who-we-are--content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 20px;
+                  }
+            }
+
+            .people {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 0;
+                  border-top: 2px solid var(--just-white);
+                  padding-top: 10px;
+                  max-width: 90%;
+                  margin: 0 auto;
+                  border-top: none;
+
+                  .people--img-container {
+                        border-top: none;
+                        order: 2;
+                  }
+
+                  .people--content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 20px;
+                  }
+            }
+
+            .music {
+                  display: grid;
+                  grid-template-columns: repeat(2, 1fr);
+                  gap: 0;
+                  border-top: 2px solid var(--just-white);
+                  padding-top: 10px;
+                  max-width: 90%;
+                  margin: 0 auto;
+                  border-top: none;
+
+                  .music--img-container {
+                        border-top: none;
+                  }
+
+                  .music--content {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        gap: 20px;
+                  }
+            }
+      }
+
+
+      /* ABOUT-US */
+
+
+
+      /* OUR-STORES */
+      #our-stores img {
+            width: 90%;
+      }
+      /* /OUR-STORES */
+}
+
+
+
+
+@media(min-width: 1024px) {
+
+
+      .about-us {
+            .about-us--title {
+                  font-size: 3.0rem;
+            }
+
+            .who-we-are {
+
+                  .who-we-are--content {
+                        h2 {
+                              width: 400px;
+                              font-size: 3.0rem;
+                        }
+
+                        p {
+                              font-size: 2.0rem;
+                        }
+                  }
+
+
+
+            }
+
+            .people {
+
+                  .people--content {
+                        h2 {
+                              width: 400px;
+                              font-size: 3.0rem;
+                        }
+
+                        p {
+                              font-size: 2.0rem;
+                        }
+                  }
+            }
+
+            .music {
+                  .music--content {
+                        h2 {
+                              width: 400px;
+                              font-size: 3.0rem;
+                        }
+
+                        p {
+                              font-size: 2.0rem;
+                        }
+                  }
+
+            }
+
+
+      }
+
+      .home-main{
+
+      .home-primary--section{
+
+            background-image: url(../aseets/img/vinilo-1200-.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 50vh;
+            margin: 0 0;
+            color: var(--just-white);
+            
+
+
+            img{
+                  display:none
+            }
+
+      }
+
+      .colors{
+            margin: 0;
+      }
+
+}
+
+      /* OUR-STORES */
+      #our-stores img {
+            width: 90%;
+      }
+
+      /* OUR-STORES */
+}
+
+// MediaQueries

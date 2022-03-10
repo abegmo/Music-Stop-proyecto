@@ -1,0 +1,178 @@
+/* ABOUT US */
+
+.about-us {
+      width: 100%;
+      height: 100%;
+      margin: 30px auto;
+
+      .about-us--title {
+            text-align: center;
+            margin: 30px auto;
+            font-size: 2.0rem;
+            font-weight: bold;
+      }
+
+      .who-we-are {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px auto;
+
+            .who-we-are--img-container {
+                  border-top: 2px solid var(--just-white);
+                  width: 80%;
+                  padding-top: 30px;
+                  /* min-height: 500px; */
+                  margin: 0 auto;
+
+                  .who-we-are-img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 30px;
+                  }
+
+            }
+
+            .who-we-are--content {
+                  h2 {
+                        text-align: center;
+                        font-size: 2.0rem;
+                        border-radius: 30px;
+                        color: var(--just-white);
+                        background-color: var(--basic-black);
+                        width: 200px;
+                        padding: 20px;
+                        margin: 0 auto 20px;
+
+                  }
+
+                  p {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 1.6rem;
+                        font-weight: 300;
+
+                  }
+
+            }
+      }
+
+      .people {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px auto;
+
+            .people--img-container {
+                  width: 80%;
+                  padding-top: 30px;
+                  /* min-height: 500px; */
+                  margin: 0 auto;
+
+                  img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 30px;
+                  }
+            }
+
+            .people--content {
+                  h2 {
+                        text-align: center;
+                        font-size: 2.0rem;
+                        border-radius: 30px;
+                        color: var(--just-white);
+                        background-color: var(--basic-black);
+                        width: 200px;
+                        padding: 20px;
+                        margin: 0 auto 20px;
+                  }
+
+                  p {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 1.6rem;
+                        font-weight: 300;
+                  }
+            }
+
+      }
+
+      .music {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px auto;
+
+            .music--img-container {
+                  width: 80%;
+                  padding-top: 30px;
+                  /* min-height: 500px; */
+                  margin: 0 auto;
+
+                  img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        border-radius: 30px;
+                  }
+            }
+
+            .music--content {
+                  h2 {
+                        text-align: center;
+                        font-size: 2.0rem;
+                        border-radius: 30px;
+                        color: var(--just-white);
+                        background-color: var(--basic-black);
+                        width: 200px;
+                        padding: 20px;
+                        margin: 0 auto 20px;
+
+                  }
+
+                  p {
+                        width: 80%;
+                        margin: 0 auto;
+                        font-size: 1.6rem;
+                        font-weight: 300;
+
+                  }
+            }
+      }
+
+      .about-us-hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 30px auto;
+            margin-top: 60px;
+            background-image: url('../aseets/img/about-us-hero.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 50vh;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
+      
+            p {
+                  font-size: 2.0rem;
+                  color: var(--just-white);
+      
+            }
+      }
+      
+}
+
+
+
+/* /ABOUT US */
