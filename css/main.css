@@ -112,6 +112,7 @@ li {
       min-width: 300px;
       width: 20%;
       height: 30%;
+      min-height: 400px;
       cursor: pointer;
       box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
       border-radius: 30px; }
@@ -120,7 +121,8 @@ li {
         margin: 0 auto;
         font-size: 1.6rem;
         font-weight: 300;
-        margin-bottom: 10px; }
+        margin-bottom: 10px;
+        text-align: center; }
       .home-secondary--section .home-secondary-section--cards .home-secondary-section--card a {
         display: flex;
         justify-content: center;
@@ -136,7 +138,8 @@ li {
       .home-secondary--section .home-secondary-section--cards .home-secondary-section--card figure {
         margin: 30px auto;
         width: 90%;
-        height: 60%; }
+        height: 170px;
+        min-height: 150px; }
         .home-secondary--section .home-secondary-section--cards .home-secondary-section--card figure img {
           width: 100%;
           height: 100%;
@@ -151,7 +154,7 @@ li {
 /* //HOME-SECONDARY-SECTION-CARDS */
 /* HOME-NEWSLETTER */
 .home--third-section {
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../aseets/img/home-third-section.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../aseets/clay-banks-fEVaiLwWvlU-unsplash.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -168,13 +171,28 @@ li {
     color: var(--just-white); }
   .home--third-section input {
     margin-top: 15px;
-    width: 200px;
+    width: 300px;
     height: 30px;
     align-self: center;
     border: none;
     border-radius: 30px;
     border: 1px solid var(--background-color);
-    justify-items: center; }
+    justify-items: center;
+    font-size: 1.6rem; }
+  .home--third-section a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--basic-black);
+    border-radius: 35px;
+    width: 200px;
+    height: 30px;
+    color: var(--basic-black);
+    font-weight: 500;
+    font-size: 1.6rem;
+    margin: 30px auto;
+    background-color: var(--complement-four);
+    height: 40px; }
 
 /* /HOME-NEWSLETTER */
 /* ABOUT US */
@@ -284,7 +302,7 @@ li {
     align-items: center;
     margin: 30px auto;
     margin-top: 60px;
-    background-image: url("../aseets/img/about-us-hero.jpg");
+    background-image: url("../aseets/about-us-hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -354,7 +372,8 @@ li {
   .news .news--pages ul li a {
     color: black;
     cursor: pointer;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    margin-right: 5px; }
 
 #subscribe-newsletter {
   font-size: 2.0rem;
@@ -386,6 +405,7 @@ li {
   text-align: center;
   font-weight: 700;
   font-size: 3.0rem;
+  padding-bottom: 30px;
   border-bottom: 2px solid var(--just-white); }
 
 .shop-main .our-store--cards {
@@ -400,9 +420,11 @@ li {
     min-width: 300px;
     width: 20%;
     height: 30%;
+    min-height: 540px;
     cursor: pointer;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    border-radius: 30px; }
+    border-radius: 30px;
+    text-align: center; }
     .shop-main .our-store--cards .our-store-card .our-store--card-img-container {
       margin: 30px auto;
       width: 90%;
@@ -412,7 +434,7 @@ li {
         height: 100%;
         object-fit: cover; }
       .shop-main .our-store--cards .our-store-card .our-store--card-img-container img:hover {
-        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
         transition: 2s ease-in-out; }
     .shop-main .our-store--cards .our-store-card .our-store--info-container {
       height: auto; }
@@ -421,18 +443,26 @@ li {
         margin: 0 auto;
         font-size: 1.6rem;
         font-weight: 300;
-        margin-bottom: 10px; }
+        margin-bottom: 20px; }
       .shop-main .our-store--cards .our-store-card .our-store--info-container .our-store--title {
         font-weight: bold; }
       .shop-main .our-store--cards .our-store-card .our-store--info-container .our-store--price {
+        margin-top: 30px;
+        width: 70%;
         margin-bottom: 20px;
-        font-weight: 500; }
+        font-weight: 500;
+        font-size: 1.8rem;
+        border-radius: 35px;
+        background-color: var(--complement-four);
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1); }
   .shop-main .our-store--cards .our-store-card:hover {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-2%); }
 
 /* SHOP */
 @media (min-width: 700px) {
+  .home--third-section input {
+    width: 400px; }
   .about-us .about-us--title {
     font-size: 2.5rem; }
   .about-us .who-we-are {
@@ -508,7 +538,7 @@ li {
   .about-us .music .music--content p {
     font-size: 2.0rem; }
   .home-main .home-primary--section {
-    background-image: url(../aseets/img/vinilo-1200-.png);
+    background-image: url(../aseets/vinilo-1200-.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

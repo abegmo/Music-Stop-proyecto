@@ -8,6 +8,7 @@
             text-align: center;
             font-weight: 700;
             font-size: 3.0rem;
+            padding-bottom: 30px;
             border-bottom: 2px solid var(--just-white);
       }
 
@@ -24,9 +25,11 @@
                   min-width: 300px;
                   width: 20%;
                   height: 30%;
+                  min-height: 540px;
                   cursor: pointer;
                   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
                   border-radius: 30px;
+                  text-align: center;
 
                   .our-store--card-img-container {
                         margin: 30px auto;
@@ -40,7 +43,7 @@
                         }
 
                         img:hover {
-                              -webkit-transform: rotate(360deg);
+                              transform: rotate(360deg);
                               transition: 2s ease-in-out;
                         }
                   }
@@ -54,14 +57,22 @@
                               margin: 0 auto;
                               font-size: 1.6rem;
                               font-weight: 300;
-                              margin-bottom: 10px;
+                              margin-bottom: 20px;
+
                         }
                         .our-store--title {
                               font-weight: bold;
                         }
                         .our-store--price {
+                              margin-top: 30px;
+                              width: 70%;
                               margin-bottom: 20px;
                               font-weight: 500;
+                              font-size: 1.8rem;
+                              border-radius: 35px;
+                              background-color:var(--complement-four);
+                              box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);;
+                              
                         }
 
 

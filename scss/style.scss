@@ -14,6 +14,13 @@
 
 @media(min-width:700px) {
 
+      .home--third-section{
+            
+            input{
+                  width: 400px;
+            }
+      }
+
       .about-us {
             .about-us--title {
                   font-size: 2.5rem;
@@ -161,7 +168,7 @@
 
       .home-primary--section{
 
-            background-image: url(../aseets/img/vinilo-1200-.png);
+            background-image: url(../aseets/vinilo-1200-.png);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
